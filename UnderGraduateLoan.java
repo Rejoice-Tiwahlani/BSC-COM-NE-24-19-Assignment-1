@@ -1,6 +1,8 @@
 public class UnderGraduateLoan extends StudentLoans{
-     private String department;
+     private String name;
     private String regNumber;
+    private double stationaryAllowance;
+    private double interestRate;
     
     //the default no arg constructor
     UnderGraduateLoan (){

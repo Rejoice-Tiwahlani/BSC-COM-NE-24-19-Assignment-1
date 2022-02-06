@@ -18,13 +18,13 @@ public class Mainnn extends StudentLoans{
         System.out.print("ENTER YOUR NAME: ");
         String name = input.next();
 
-        System.out.print("ENTER YOUR PROGRAM: ");
+        System.out.print("Enter Your Program: ");
         String program = input.next();
 
-        System.out.print("ENTER YEAR: ");
+        System.out.print("Enter Year: ");
         String currentyear = input.next();
 
-        System.out.print("ENTER DEPARTMENT: ");
+        System.out.print("Enter Department: ");
         String department = input.next();
 
         System.out.println("Enter Registration Number: ");
@@ -53,13 +53,13 @@ public class Mainnn extends StudentLoans{
         System.out.println("Enter Your Year Of Study :      ");
         String currentyear = input.next();
 
-        System.out.println("ENTER THE NAME OR TITLE OF YOUR THESIS :   ");
+        System.out.println("Enter the title of your thesis :   ");
         String nameOfThesis = input.next();
 
-        System.out.println("ENTER YOUR SUPERVISORS NAME:   ");
+        System.out.println("Enter your supervisors name:   ");
         String Supervisor = input.next();
 
-        System.out.println("ENTER YOUR RESEARCH DETAILS :   ");
+        System.out.println("Enter your research title :   ");
         String research = input.next();
 
         int rand = 100+ (int)((Math.random())*899);
