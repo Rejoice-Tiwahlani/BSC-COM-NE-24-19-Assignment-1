@@ -1,7 +1,7 @@
 public class StudentLoans{
     private String name;
     private String program;
-    private int currentYear;
+    private String currentYear;
 
     //the default constructor
      public StudentLoans(){
@@ -9,7 +9,7 @@ public class StudentLoans{
     }
 
     //a constructor with arguments
-    public StudentLoans(String name, String program, int currentYear){
+    public StudentLoans(String name, String program, String currentYear){
          this.name = name;
         this.program = program;
         this.currentYear = currentYear;
@@ -23,7 +23,7 @@ public void setName(String newName){
         this.program = program;                                 
     }
 
-     public void setcurrentYear(int newcurrentYear){
+     public void setcurrentYear(String newcurrentYear){
         this.currentYear = newcurrentYear;
     }
 

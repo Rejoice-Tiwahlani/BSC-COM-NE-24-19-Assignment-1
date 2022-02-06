@@ -4,7 +4,7 @@ public class Mainnn extends StudentLoans{
     public static void main(String [] args){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter type of student \n1. UNDERGRADUATE \n2. POSTGRADUATE ");
+        System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate ");
         int option = input.nextInt();
 
         //System.out.println("\n");
