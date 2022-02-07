@@ -2,6 +2,7 @@ public class PostGraduateLoan extends StudentLoans{
     private String nameOfThesis;
     private String supervisor;
     private String research;
+    private double grant;
 
 // default constructor
 public PostGraduateLoan() {
@@ -26,6 +27,9 @@ public void setSupervisor( String supervisor){
  public void setResearch( String research){
      this.research =research;
  }
+ public void setGrant(double grant){
+     this.grant = grant;
+ }
 
  //the getter methods
   public String getNameOfThesis(){
@@ -38,5 +42,8 @@ public void setSupervisor( String supervisor){
 
  public String getResearch(){
      return this.research;
+ }
+ public double getGrant(){
+     return this.grant;
  }
 }

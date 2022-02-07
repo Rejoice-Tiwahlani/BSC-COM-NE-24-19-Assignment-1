@@ -3,8 +3,10 @@ import java.util.*;
 public class Mainnn extends StudentLoans{
     public static void main(String [] args){
         Scanner input = new Scanner(System.in);
-
-        System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate ");
+        StudentLoans loans = new StudentLoans();
+            UnderGraduateLoan loan = new UnderGraduateLoan();
+            while(true){
+        System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate \n3. Enter 0 to exit the system ");
         int option = input.nextInt();
 
         //System.out.println("\n");
@@ -35,9 +37,22 @@ public class Mainnn extends StudentLoans{
         String random = "UG"+ rand;
         System.out.println("Your account number is : "+ random );
         UnderGraduateLoan st1 = new UnderGraduateLoan(name, program, currentyear, department, regNumber );
+        System.out.println("Enter tution amount");
+        
+         loans.setTutionAmount(input.nextDouble());
+            System.out.println("Enter Subsistence" +loans.getTutionFee());
+          
+         System.out.println("Enter Subsistence");
+         loan.setSubsitenceAmount(input.nextDouble());
+         System.out.println("Enter Subsistence"+loan.getSubsistence());
+          
+
+         System.out.println("Enter Stationary");
+         loan.setStationaryAmount(input.nextDouble());
+    
         
         }
-        else {
+        else if(option ==2) {
             System.out.println("Welcome Postgraduate Student");
 
             System.out.println("  ");
@@ -69,6 +84,9 @@ public class Mainnn extends StudentLoans{
         PostGraduateLoan st2 = new PostGraduateLoan(name, program, currentyear, nameOfThesis, Supervisor, research);
    
         }
+        else{
+            System.exit(0);
+        }
 
         // PostGraduateAccount student1 = new PostGraduateAccount();
         // System.out.println(student1.toString());
@@ -76,9 +94,8 @@ public class Mainnn extends StudentLoans{
         // student2.toString();
         // System.out.println(student2.toString());
        
-         StudentLoans loan = new StudentLoans();
-        
+        // StudentLoans loan = new StudentLoans();
 
-
+            }
     }
 }
