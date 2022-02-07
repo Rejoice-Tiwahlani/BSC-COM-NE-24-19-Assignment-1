@@ -1,5 +1,6 @@
 public class UnderGraduateLoan extends StudentLoans{
      private String name;
+     private String department;
     private String regNumber;
     private double stationaryAllowance;
     private double interestRate;
