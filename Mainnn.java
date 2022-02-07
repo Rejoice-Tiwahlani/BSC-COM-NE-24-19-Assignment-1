@@ -17,7 +17,7 @@ public class Mainnn extends StudentLoans{
 
         System.out.println("-------ENTER STUDENT DETAILS-------");
 
-        System.out.print("ENTER YOUR NAME: ");
+        System.out.print("Enter your name: ");
         String name = input.next();
 
         System.out.print("Enter Your Program: ");
