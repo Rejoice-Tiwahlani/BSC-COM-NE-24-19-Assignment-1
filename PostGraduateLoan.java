@@ -3,6 +3,8 @@ public class PostGraduateLoan extends StudentLoans{
     private String supervisor;
     private String research;
     private double grant;
+    private double totalLoanAmount;
+
 
 // default constructor
 public PostGraduateLoan() {
@@ -49,4 +51,5 @@ public void setSupervisor( String supervisor){
      return this.grant;
  }
  
+
 }

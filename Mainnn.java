@@ -2,11 +2,19 @@
 importing Scanner.util.java */
 import java.util.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sound.sampled.SourceDataLine;
+
 //Main method
 public class Mainnn extends StudentLoans{
+     static List<StudentLoans> accountArray = new ArrayList<>();
 
     public static void main(String [] args){
+        StudentLoans obj = null;
 
+        
         Scanner input = new Scanner(System.in);
 
         //creating an object called loans
@@ -16,7 +24,7 @@ public class Mainnn extends StudentLoans{
             //loop conditioning
             while(true){
 
-        System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate \n3. Enter 0 to exit the system ");
+        System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate \n3. Repay Loan \n4. View Loans \n5. Enter 0 to exit the system ");
         int option = input.nextInt();
 
         //checking whether the user is a postgraduate or undergraduate student
@@ -35,6 +43,7 @@ public class Mainnn extends StudentLoans{
 
         System.out.println("Enter Year: ");
         String currentyear = input.next();
+         
 
         System.out.println("Enter Department: ");
         String department = input.next();
@@ -49,23 +58,24 @@ public class Mainnn extends StudentLoans{
         System.out.println("Your account number is : "+ random );
         UnderGraduateLoan st1 = new UnderGraduateLoan(name, program, currentyear, department, regNumber );
         System.out.println("Enter tution amount  ");
-        
-         loans.setTutionAmount(input.nextDouble());
-            System.out.println("Enter Subsistence  " +loans.getTutionFee());
-          
-         System.out.println("Enter Subsistence");
-         loan.setSubsitenceAmount(input.nextDouble());
-         System.out.println("Enter Subsistence " +loan.getSubsistence());
+        loans.setTutionAmount(input.nextDouble());
+
+            System.out.println("Enter Subsistence  ");
+             loan.setSubsitenceAmount(input.nextDouble());
+         
           
 
-         System.out.println("Enter Stationary amount");
+         System.out.println("Enter Stationary amount\n ");
          loan.setStationaryAmount(input.nextDouble());
+
+         System.out.println ("\n The total loan amount is MK"  + loan.getTotalLoanAmount());
+         loan.getTotalLoanAmount();
     
         
         }
-        //
+
         //selection statement for postgraduate students
-        else if(option ==2) {
+        else if (option ==2){
             System.out.println("Welcome Postgraduate Student");
 
             System.out.println("  ");
@@ -97,11 +107,10 @@ public class Mainnn extends StudentLoans{
         PostGraduateLoan st2 = new PostGraduateLoan(name, program, currentyear, nameOfThesis, Supervisor, research);
    
         }
-        else{
+        else {
             System.exit(0);
         }
 
-
-            }
+    }
     }
 }

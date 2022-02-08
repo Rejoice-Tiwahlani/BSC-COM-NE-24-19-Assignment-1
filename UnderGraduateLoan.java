@@ -10,6 +10,11 @@ public class UnderGraduateLoan extends StudentLoans{
     private double interestRate;
     private double subsistenceAmount;
     private double stationaryAmount;
+    private double totalLoanAmount;
+
+    private double subsistenceAmountInterestRate = (11.0 / 100);
+    private double stationaryAmountInterestRate = (15.0 / 100);
+    private double tutionAmountInterestRate = (10.0 / 100);
     
     //the default no arg constructor
     UnderGraduateLoan (){
@@ -60,6 +65,10 @@ public class UnderGraduateLoan extends StudentLoans{
     public double getStationaryAllowance(){
       return stationaryAmount * Math.pow((1 + 0.1), 1 ) + stationaryAmount;
     }
+
+    public double getTotalLoanAmount(){
+      return (stationaryAmountInterestRate * stationaryAmount) +  (subsistenceAmountInterestRate * subsistenceAmount) + (tutionAmount * tutionAmountInterestRate); 
+      }
 
     //overriding method called getsubsistence
       @Override

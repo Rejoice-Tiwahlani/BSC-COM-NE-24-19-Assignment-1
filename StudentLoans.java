@@ -1,11 +1,14 @@
 // CREATING A SUPER CLASS (STUDENTLOANS)
 public class StudentLoans{
+    
     private String name;
     private String program;
     private String currentYear;
     private double tutionFee;
     private double subsistence;
-    private double tutionAmount;
+    public double tutionAmount;
+
+    
 
     //the default constructor
      public StudentLoans(){
@@ -13,7 +16,7 @@ public class StudentLoans{
     }
 
     //a constructor with arguments
-    public StudentLoans(String name, String program, String currentYear){
+    public StudentLoans(String name, String program, String currentYear ){
          this.name = name;
         this.program = program;
         this.currentYear = currentYear;
