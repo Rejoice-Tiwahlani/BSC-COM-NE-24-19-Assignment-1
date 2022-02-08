@@ -32,6 +32,7 @@ public class Mainnn extends StudentLoans{
         System.out.println("Enter Registration Number: ");
         String regNumber = input.next();
         
+        //generating a random number
         int rand = 100+ (int)((Math.random())*899);
         
         String random = "UG"+ rand;
@@ -77,7 +78,7 @@ public class Mainnn extends StudentLoans{
         System.out.println("Enter your research title :   ");
         String research = input.next();
 
-        int rand = 100+ (int)((Math.random())*899);
+        int rand = 100 +(int)((Math.random()) * 999);
         
         String random = "PG"+ rand;
         System.out.println("You account number is : "+ random );
