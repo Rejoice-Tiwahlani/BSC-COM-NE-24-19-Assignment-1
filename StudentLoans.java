@@ -1,3 +1,4 @@
+// CREATING A SUPER CLASS (STUDENTLOANS)
 public class StudentLoans{
     private String name;
     private String program;
@@ -5,6 +6,7 @@ public class StudentLoans{
     private double tutionFee;
     private double subsistence;
     private double tutionAmount;
+
     //the default constructor
      public StudentLoans(){
 
@@ -59,6 +61,8 @@ public void setName(String newName){
     public double getTutionAmount(){
         return tutionAmount;
     }
+
+    /** OVERRIDIN A METHOD CALLED toString */
       @Override
      public String toString(){
         return "\nname: " + name + "\nprogram: " + program + "\ncurrentYear: " + currentYear;

@@ -21,12 +21,13 @@ public PostGraduateLoan() {
 }
 
 public void setSupervisor( String supervisor){
-     this.supervisor =supervisor;
+     this.supervisor =supervisor;                     //specifies the name of the supervisor
  }
 
  public void setResearch( String research){
      this.research =research;
  }
+
  public void setGrant(double grant){
      this.grant = grant;
  }
@@ -43,7 +44,9 @@ public void setSupervisor( String supervisor){
  public String getResearch(){
      return this.research;
  }
+
  public double getGrant(){
      return this.grant;
  }
+ 
 }

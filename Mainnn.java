@@ -1,11 +1,21 @@
+/**
+importing Scanner.util.java */
 import java.util.*;
 
+//Main method
 public class Mainnn extends StudentLoans{
+
     public static void main(String [] args){
+
         Scanner input = new Scanner(System.in);
+
+        //creating an object called loans
         StudentLoans loans = new StudentLoans();
             UnderGraduateLoan loan = new UnderGraduateLoan();
+
+            //loop conditioning
             while(true){
+
         System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate \n3. Enter 0 to exit the system ");
         int option = input.nextInt();
 
@@ -33,7 +43,7 @@ public class Mainnn extends StudentLoans{
         String regNumber = input.next();
         
         //generating a random number
-        int rand = 100+ (int)((Math.random())*899);
+        int rand = 100+ (int)((Math.random()) * 999);
         
         String random = "UG"+ rand;
         System.out.println("Your account number is : "+ random );
@@ -53,6 +63,8 @@ public class Mainnn extends StudentLoans{
     
         
         }
+        //
+        //selection statement for postgraduate students
         else if(option ==2) {
             System.out.println("Welcome Postgraduate Student");
 
