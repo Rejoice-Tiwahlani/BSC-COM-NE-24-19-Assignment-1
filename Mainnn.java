@@ -9,7 +9,7 @@ public class Mainnn extends StudentLoans{
         System.out.println("Enter type of student \n1. Undergraduate \n2. Postgraduate \n3. Enter 0 to exit the system ");
         int option = input.nextInt();
 
-        //System.out.println("\n");
+        //checking whether the user is a postgraduate or undergraduate student
         if(option == 1){
             System.out.println("YOU ARE AN UNDERGRADUATE STUDENT");
 
@@ -17,16 +17,16 @@ public class Mainnn extends StudentLoans{
 
         System.out.println("-------ENTER STUDENT DETAILS-------");
 
-        System.out.print("Enter your name: ");
+        System.out.print("Enter your name(fnmame & lname): ");
         String name = input.next();
 
-        System.out.print("Enter Your Program: ");
+        System.out.println("Enter Your Program: ");
         String program = input.next();
 
-        System.out.print("Enter Year: ");
+        System.out.println("Enter Year: ");
         String currentyear = input.next();
 
-        System.out.print("Enter Department: ");
+        System.out.println("Enter Department: ");
         String department = input.next();
 
         System.out.println("Enter Registration Number: ");
@@ -37,17 +37,17 @@ public class Mainnn extends StudentLoans{
         String random = "UG"+ rand;
         System.out.println("Your account number is : "+ random );
         UnderGraduateLoan st1 = new UnderGraduateLoan(name, program, currentyear, department, regNumber );
-        System.out.println("Enter tution amount");
+        System.out.println("Enter tution amount  ");
         
          loans.setTutionAmount(input.nextDouble());
-            System.out.println("Enter Subsistence" +loans.getTutionFee());
+            System.out.println("Enter Subsistence  " +loans.getTutionFee());
           
          System.out.println("Enter Subsistence");
          loan.setSubsitenceAmount(input.nextDouble());
-         System.out.println("Enter Subsistence"+loan.getSubsistence());
+         System.out.println("Enter Subsistence " +loan.getSubsistence());
           
 
-         System.out.println("Enter Stationary");
+         System.out.println("Enter Stationary amount");
          loan.setStationaryAmount(input.nextDouble());
     
         
@@ -59,16 +59,16 @@ public class Mainnn extends StudentLoans{
 
         System.out.println("-------Enter Your Details-------");
 
-        System.out.println("Enter Your Name  :          ");
+        System.out.println("Enter Your Name: ");
         String name = input.next();
 
-        System.out.println("Enter Your Program Of Study :        ");
+        System.out.println("Enter Your Program Of Study: ");
         String program = input.next();
 
-        System.out.println("Enter Your Year Of Study :      ");
+        System.out.println("Enter Your Year Of Study: ");
         String currentyear = input.next();
 
-        System.out.println("Enter the title of your thesis :   ");
+        System.out.println("Enter the title of your thesis: ");
         String nameOfThesis = input.next();
 
         System.out.println("Enter your supervisors name:   ");
@@ -88,13 +88,6 @@ public class Mainnn extends StudentLoans{
             System.exit(0);
         }
 
-        // PostGraduateAccount student1 = new PostGraduateAccount();
-        // System.out.println(student1.toString());
-        // UnderGraduate student2 = new UnderGraduate();
-        // student2.toString();
-        // System.out.println(student2.toString());
-       
-        // StudentLoans loan = new StudentLoans();
 
             }
     }
