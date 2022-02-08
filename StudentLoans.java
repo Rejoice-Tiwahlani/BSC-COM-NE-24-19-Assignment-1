@@ -62,7 +62,7 @@ public void setName(String newName){
         return tutionAmount;
     }
 
-    /** OVERRIDIN A METHOD CALLED toString */
+    /** OVERRIDING A METHOD CALLED toString */
       @Override
      public String toString(){
         return "\nname: " + name + "\nprogram: " + program + "\ncurrentYear: " + currentYear;
